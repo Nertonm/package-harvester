@@ -1,0 +1,15 @@
+PASS: resilience imports
+PASS: ExponentialBackoff
+PASS: CircuitBreaker
+PASS: checkpoint
+PASS: NPSPackage model
+PASS: Nix parser
+PASS: Arch parser
+PASS: Flathub parser
+FAIL: Exporter protocol: No module named 'aiofiles'
+FAIL: Exporter factory: No module named 'aiofiles'
+FAIL: NPS exporter file write: No module named 'aiofiles'
+FAIL: SQLite exporter: No module named 'aiofiles'
+PASS: package_harvester.__version__
+
+=== 9/13 passed, 4 failed ===
