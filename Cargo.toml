@@ -1,0 +1,31 @@
+[package]
+name = "package-harvester"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nerton <your-email@example.com>"]
+description = "Modular Linux package metadata harvester with NPS export"
+license = "Apache-2.0"
+repository = "https://github.com/Nertonm/package-harvester"
+
+[dependencies]
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+thiserror = "1.0"
+
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+# Add testing dependencies as needed
+
+[lib]
+name = "package_harvester"
+path = "src/lib.rs"
